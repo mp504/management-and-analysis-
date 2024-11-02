@@ -30,24 +30,14 @@ import seaborn as sns
 
 # Establishing a connection to the database
 # Establishing a connection to the database
-conn_str = 'Driver={ODBC Driver 18 for SQL Server};Server=tcp:Yourserver,1433;Database=Database_Name;Uid=user_ID;Pwd=Your_password;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;'
+conn_str = 'connection string'
 conn = pyodbc.connect(conn_str)
 conn.setdecoding(pyodbc.SQL_CHAR, encoding='latin1')
 conn.setencoding('latin1')
 
 
 # Create an SQLAlchemy engine
-engine = create_engine(
-    'mssql+pyodbc:///?odbc_connect=' + 
-    'Driver={ODBC Driver 18 for SQL Server};' + 
-    'Server=tcp:Yourserver,1433;' + 
-    'Database=Database_Name;' + 
-    'Uid=user_ID;' + 
-    'Pwd=Password;' + 
-    'Encrypt=yes;' + 
-    'TrustServerCertificate=no;' + 
-    'Connection Timeout=30;'
-)
+engine = create_engine('conection string')
 c = conn.cursor()
 
 
