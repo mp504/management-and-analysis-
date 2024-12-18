@@ -26,9 +26,7 @@ This project is a Task Management App built using Streamlit, Pandas, SQLAlchemy,
   - pyodbc
 
 - **Frontend**:
-  - HTML
-  - CSS
-  - JavaScript
+  - Streamlit
 
 - **Data Visualization**:
   - Altair
